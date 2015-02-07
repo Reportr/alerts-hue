@@ -9,7 +9,7 @@ module.exports = function(options) {
 
     var exec = function(alert, alertConfig, e) {
         var stateOn = lightState.create().on().white(500, 100);
-        var stateOff = lightState.create().on().white(500, 100);
+        var stateOff = lightState.create().off();
 
         return Q()
         .then(function() {
@@ -30,7 +30,7 @@ module.exports = function(options) {
         title: "Philips Hue",
         execute: exec,
         options: {
-            to: {
+            light: {
                 type: "number",
                 label: "Light",
                 help: "Light ID"
