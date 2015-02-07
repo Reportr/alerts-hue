@@ -1,0 +1,12 @@
+{
+    "name": "reportr-alerts-hue",
+    "version": "1.0.0",
+    "description": "Blink lights as a reportr alert",
+    "author": "Samy Pessé <samypesse@gmail.com>",
+    "main": "index.js",
+    "dependencies": {
+        "q": "1.0.1",
+        "lodash": "2.4.1",
+        "node-hue-api": "1.0.3"
+    }
+}
